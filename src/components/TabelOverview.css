@@ -52,8 +52,8 @@
 
 @media (max-width: 768px) {
 	.navigationButtons a {
-		margin: 4px;
-		padding: 6px;
+		margin: 2px;
+		padding: 4px;
 	}
 	.break {
 		display: none;
