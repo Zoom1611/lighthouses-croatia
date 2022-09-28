@@ -41,12 +41,11 @@
 	display: none;
 }
 
-.next {
-	display: none;
-}
+.next,
 .previous {
 	display: none;
 }
+
 .leaflet-control-layers-overlays {
 	padding: 4px;
 }
@@ -55,5 +54,8 @@
 	.navigationButtons a {
 		margin: 4px;
 		padding: 6px;
+	}
+	.break {
+		display: none;
 	}
 }
