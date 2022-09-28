@@ -40,7 +40,7 @@ const TabelOverview = ({ data }) => {
 		.slice(numberOfDataVisited, numberOfDataVisited + dataPerPage)
 		.map(d => {
 			return (
-				<div className="bg-white p-4 rounded-lg shadow">
+				<div className="bg-white p-4 rounded-lg shadow" key={d.properties.pk}>
 					<div className=" font-semibold text-gray-700">
 						Naziv objekta: {d.properties.naziv_objekta}
 					</div>

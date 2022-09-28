@@ -60,7 +60,7 @@ const Navbar = () => {
 						to={"/table"}
 					>
 						<HiTable className="mr-[3px]" />
-						<span>Tabel</span>
+						<span>Table</span>
 					</Link>
 				</div>
 			</div>
