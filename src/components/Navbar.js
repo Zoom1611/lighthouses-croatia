@@ -10,7 +10,7 @@ const Navbar = () => {
 	return (
 		<div className="flex justify-between px-[15px] md:px-[30px] h-[50px] items-center bg-[#F5F5F5]">
 			<div className="text-2xl md:text-3xl text-[#57A5F1]">
-				<Link to={"/"}>LightHousesCroatia</Link>
+				LightHousesCroatia
 			</div>
 			<div className="hidden md:flex">
 				<div className="mr-[20px] hover:text-[#57A5F1] text-[#6e6e6e]">
