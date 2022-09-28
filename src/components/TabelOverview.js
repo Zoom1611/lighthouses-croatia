@@ -8,7 +8,7 @@ import "./TabelOverview.css";
 const TabelOverview = () => {
 	const [data, setData] = useState([]);
 	const [page, setPage] = useState(0);
-	const dataPerPage = 10;
+	const dataPerPage = 9;
 	const numberOfDataVisited = page * dataPerPage;
 	const totalPages = Math.ceil(data.length / dataPerPage);
 
@@ -20,20 +20,21 @@ const TabelOverview = () => {
 		.slice(numberOfDataVisited, numberOfDataVisited + dataPerPage)
 		.map(d => {
 			return (
-				<tr
-					className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-					key={d.properties.pk}
-				>
+				<tr className="bg-white border-b" key={d.properties.pk}>
 					<th
 						scope="row"
-						className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+						className="py-4 px-6 font-medium text-gray-700 whitespace-nowrap"
 					>
 						{d.properties.naziv_objekta}
 					</th>
-					<td className="py-4 px-6">{d.properties.ps_br}</td>
-					<td className="py-4 px-6">{d.properties.e_br}</td>
-					<td className="py-4 px-6">{d.properties.tip_objekta}</td>
-					<td className="py-4 px-6">{d.properties.lucka_kapetanija}</td>
+					<td className="py-4 px-6 text-gray-600">{d.properties.ps_br}</td>
+					<td className="py-4 px-6 text-gray-600">{d.properties.e_br}</td>
+					<td className="py-4 px-6 text-gray-600">
+						{d.properties.tip_objekta}
+					</td>
+					<td className="py-4 px-6 text-gray-600">
+						{d.properties.lucka_kapetanija}
+					</td>
 				</tr>
 			);
 		});
@@ -42,24 +43,24 @@ const TabelOverview = () => {
 	};
 
 	return (
-		<div className="w-full h-screen mt-5">
+		<div className="w-full mt-5">
 			<div className="max-w-[1000px] mx-auto px-8 h-full">
-				<table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-					<thead className="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+				<table className="w-full text-sm text-left text-gray-400 ">
+					<thead className="text-xs text-gray-600 uppercase bg-blue-50">
 						<tr>
 							<th scope="col" className="py-3 px-6">
 								Naziv objekta
 							</th>
-							<th scope="col" className="py-3 px-6">
+							<th scope="col" className="py-3 px-6 w-28">
 								PS broj
 							</th>
-							<th scope="col" className="py-3 px-6">
+							<th scope="col" className="py-3 px-6 w-28">
 								E broj
 							</th>
-							<th scope="col" className="py-3 px-6">
+							<th scope="col" className="py-3 px-6 w-28">
 								Tip objekta
 							</th>
-							<th scope="col" className="py-3 px-6">
+							<th scope="col" className="py-3 px-6 w-28">
 								Lučka kapetanija
 							</th>
 						</tr>

@@ -33,7 +33,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/map" element={<Map data={data} />} />
-					<Route path="/tabel" element={<TabelOverview />} />
+					<Route path="/table" element={<TabelOverview />} />
 					<Route path="/map2" element={<MapExercise data={data} />} />
 				</Routes>
 			</BrowserRouter>

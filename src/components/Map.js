@@ -7,18 +7,7 @@ import {
 	LayerGroup,
 } from "react-leaflet";
 import "./Map.css";
-// import lighthouse from "../img/lighthouse.svg";
-// import { useEffect } from "react";
 import MarkerCluster from "./MarkerCluster";
-
-/* const getIcon = iconSize => {
-	return L.icon({
-		iconUrl: lighthouse,
-		iconSize: [iconSize],
-	});
-}; */
-
-//https://codesandbox.io/s/leaflet-markerclusters-performance-test-removelayer-addlayer-forked-ozq5c6?file=/src/Leaflet.jsx
 
 const Map = ({ data }) => {
 	let markers;
@@ -43,26 +32,28 @@ const Map = ({ data }) => {
 	addMarkers();
 
 	return (
-		<MapContainer
-			center={[43.508133, 16.440193]}
-			zoom={13}
-			scrollWheelZoom={true}
-			maxBounds={bounds}
-			maxZoom={19}
-			minZoom={7}
-		>
-			<TileLayer
-				attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-			/>
-			<LayersControl position="topright">
-				<LayersControl.Overlay checked name="Lighthouses">
-					<LayerGroup>
-						<MarkerCluster markers={markers} addMarkers={addMarkers} />
-					</LayerGroup>
-				</LayersControl.Overlay>
-			</LayersControl>
-		</MapContainer>
+		<div className="top-[50px] right-0 left-0 bottom-0 fixed">
+			<MapContainer
+				center={[43.508133, 16.440193]}
+				zoom={13}
+				scrollWheelZoom={true}
+				maxBounds={bounds}
+				maxZoom={19}
+				minZoom={7}
+			>
+				<TileLayer
+					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+				/>
+				<LayersControl position="topright">
+					<LayersControl.Overlay checked name="Lighthouses">
+						<LayerGroup>
+							<MarkerCluster markers={markers} />
+						</LayerGroup>
+					</LayersControl.Overlay>
+				</LayersControl>
+			</MapContainer>
+		</div>
 	);
 };
 
