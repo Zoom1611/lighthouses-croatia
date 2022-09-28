@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+import axios from "axios";
+
 import Map from "./components/Map";
 import TabelOverview from "./components/TabelOverview";
 import Navbar from "./components/Navbar";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import "leaflet/dist/leaflet.css";
 
+import "./App.css";
+import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/leaflet.markercluster";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";

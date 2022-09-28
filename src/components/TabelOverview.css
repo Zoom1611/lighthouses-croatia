@@ -29,13 +29,7 @@
 .navigationActive a {
 	color: #6e6e6e;
 	background-color: #ffffff;
-} /* 
-
-.navigationButtons .navigationDisabled a:hover {
-	color: blue;
-	background-color: red;
-	cursor: no-drop;
-} */
+}
 
 .navigationDisabled a {
 	display: none;

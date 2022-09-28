@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiTable, HiMap } from "react-icons/hi";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useState } from "react";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);

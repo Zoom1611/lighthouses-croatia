@@ -6,7 +6,6 @@ import {
 	LayersControl,
 	LayerGroup,
 } from "react-leaflet";
-import "./Map.css";
 import MarkerCluster from "./MarkerCluster";
 
 const Map = ({ data }) => {
