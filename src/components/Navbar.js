@@ -17,13 +17,13 @@ const Navbar = () => {
 				<div className="mr-[20px] hover:text-[#57A5F1] text-[#6e6e6e]">
 					<Link className="flex flex-row items-center" to={"/"}>
 						<HiMap className="text-4xl mr-[3px]" />
-						<span>Map</span>
+						<span>Karta</span>
 					</Link>
 				</div>
 				<div className="hover:text-[#57A5F1] text-[#6e6e6e]">
 					<Link className="flex flex-row items-center" to={"/table"}>
 						<HiTable className="text-4xl mr-[3px]" />
-						<span>Tabel</span>
+						<span>Tablica</span>
 					</Link>
 				</div>
 			</div>
@@ -50,7 +50,7 @@ const Navbar = () => {
 						to={"/"}
 					>
 						<HiMap className="mr-[3px]" />
-						<span>Map</span>
+						<span>Karta</span>
 					</Link>
 				</div>
 				<div className="hover:text-[#57A5F1] text-[#6e6e6e]">
@@ -60,7 +60,7 @@ const Navbar = () => {
 						to={"/table"}
 					>
 						<HiTable className="mr-[3px]" />
-						<span>Table</span>
+						<span>Tablica</span>
 					</Link>
 				</div>
 			</div>

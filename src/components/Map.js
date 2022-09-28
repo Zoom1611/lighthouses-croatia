@@ -46,7 +46,7 @@ const Map = ({ data }) => {
 					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 				/>
 				<LayersControl position="topright">
-					<LayersControl.Overlay checked name="Lighthouses">
+					<LayersControl.Overlay checked name="Svjetionici">
 						<LayerGroup>
 							<MarkerCluster markers={markers} />
 						</LayerGroup>
