@@ -12,8 +12,8 @@ import MarkerCluster from "./MarkerCluster";
 const Map = ({ data }) => {
 	let markers;
 
-	const southWest = L.latLng(41.718166, 13.384899);
-	const northEast = L.latLng(46.849106, 20.710189);
+	const southWest = L.latLng(46.813435, 19.396171);
+	const northEast = L.latLng(41.592416, 13.024097);
 	const bounds = L.latLngBounds(southWest, northEast);
 
 	const addMarkers = () => {

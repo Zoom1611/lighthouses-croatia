@@ -47,6 +47,9 @@
 .previous {
 	display: none;
 }
+.leaflet-control-layers-overlays {
+	padding: 4px;
+}
 
 @media (max-width: 768px) {
 	.navigationButtons a {
